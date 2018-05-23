@@ -11,10 +11,10 @@ class String
   end
 
   def exclamation?
-    self.split(/[\.\?]/)
+    self.end_with?("!")
   end
 
   def count_sentences
-
+    self.split(/[\.\?]/).count
   end
 end
